@@ -3,20 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My website</title>
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #25324b;
+      background: #f3f6fb;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 18px 8%;
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    select {
+      padding: 10px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: white;
+      font-size: 15px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 55px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      padding: 28px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px #25324b12;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #3157a4;
+    }
+
+    p {
+      color: #536174;
+      line-height: 1.7;
+    }
+  </style>
 </head>
 <body>
-  <label for="language">Language / 语言 / Idioma:</label>
-  <select id="language">
-    <option value="zh">中文</option>
-    <option value="en">English</option>
-    <option value="es">Español</option>
-  </select>
+  <header>
+    <label for="language">Language / 语言 / Idioma:</label>
+    <select id="language">
+      <option>English</option>
+      <option>中文</option>
+      <option>Español</option>
+    </select>
+  </header>
 
-  <script>
-    document.querySelector("#language").addEventListener("change", (event) => {
-      document.documentElement.lang = event.target.value;
-    });
-  </script>
+  <main>
+    <section>
+      <h1>About Us</h1>
+      <p>We share information about our work, our ideas, and how to get in touch.</p>
+    </section>
+
+    <section>
+      <h1>关于我们</h1>
+      <p>我们分享关于我们的工作、想法以及联系方式的信息。</p>
+    </section>
+
+    <section>
+      <h1>Sobre nosotros</h1>
+      <p>Compartimos información sobre nuestro trabajo, nuestras ideas y cómo ponerse en contacto.</p>
+    </section>
+  </main>
 </body>
 </html>
