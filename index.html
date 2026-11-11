@@ -7,9 +7,12 @@
 </head>
 <body>
   <nav aria-label="Language">
-    <a href="en.html">English</a>
-    <a href="zh.html">中文</a>
-    <a href="es.html">Español</a>
+    <label for="language">Language:</label>
+    <select id="language" onchange="window.location.href = this.value">
+      <option value="en.html" selected>English</option>
+      <option value="zh.html">中文</option>
+      <option value="es.html">Español</option>
+    </select>
   </nav>
 </body>
 </html>
